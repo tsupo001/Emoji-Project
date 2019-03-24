@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <title>targetImg</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" media="screen">
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <!-- <script type="text/javascript" src="emojionearea/dist/emojionearea.js"></script> -->
+ <script type="text/javascript" src="dist_lvl_0/emojionearea.js"></script>
+ <!-- <link rel="stylesheet" type="text/css" href="emojionearea/dist/emojionearea.min.css" media="screen"> -->
+ <link rel="stylesheet" type="text/css" href="dist_lvl_0/emojionearea.min.css" media="screen">
+
+
+
+
+</head>
+
+<body>
+  <!--
+  <script type="text/javascript">
+    var imageURLs = [
+      "images/cats/cat1.jpg", "images/cats/cat2.jpg", "images/cats/cat3.jpg", "images/cats/cat4.jpg", "images/cats/cat5.jpg", "images/cats/cat6.jpg"
+    ];
+
+    function getImageTag() {
+      var img = '<img class="resize" src=\"';
+      var randomIndex = Math.floor(Math.random() * imageURLs.length);
+      img += imageURLs[randomIndex];
+      img += '\" alt=\"Some alt text\"/>';
+      return img;
+      console.log(img);
+    }
+    document.write(getImageTag());
+  </script> -->
+
+  <div class='container'>
+    <section id="singleImg"></section>
+    <!-- <div class="form-group">
+      <label for="emoji">Emoji:</label>
+      <input type="text" class="form-control" id="emoji">
+    </div>
+      <p class="text-center">
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+
+      </p> -->
+      
+      <form id="emoji_guess" class="form-group">
+        <!-- <label for="name">Name:</label> -->
+        <!-- <input type="text" class="form-control" id="name"> -->
+        <input type="text" data-emojiable="true" id="emoji_input" emoji"emoji" placeholder="name">
+  
+        <!-- <button type="submit" class="btn btn-outline-primary" onClick="refreshPage()">Create</button> -->
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+
+      </form>
+
+      <!-- <script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        </script> -->
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $("#emoji_input").emojioneArea({
+            //   container: "#container",
+            //   hideSource: false,
+            //   useSprite: false,
+              pickerPosition: "right"
+            });
+            
+          });
+        </script>
+
+  </div>
+
+  <script src="src/targetImg.js">
+  </script>
+
+
+
+</body>
+
+</html>

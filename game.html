@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>New Game</title>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+  <div class='container'>
+    <h1 class="text-center">New Game</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+    <form id="new-game" class="form-group" action="/lobby.html">
+        <label for="name">Name:</label>
+        <!-- <input type="text" class="form-control" id="name"> -->
+        <input type="text" id="name_input" name"name" placeholder="name" class="form-control">
+        <!-- <input type="text" id="game_id" name"game_id" placeholder="game_id"> -->
+        <p><br></p>
+        <p>Tell us more about You! (for research purposes)</p>
+        <label for="sel1">Age:</label>
+        <select class="form-control" id="new-usr-age">
+          <option value="" disabled selected>Select your option</option>
+          <option>Under 12 years old</option>
+          <option>12-17 years old</option>
+          <option>18-24 years old</option>
+          <option>25-34 years old</option>
+          <option>35-44 years old</option>
+          <option>45-54 years old</option>
+          <option>55-64 years old</option>
+          <option>65-74 years old </option>
+          <option>75 years or older</option>
+          </select>
+  
+          <p></p>
+          <a href="lobby.html">
+        <button type="submit" class="btn btn-outline-primary">Create</button>
+      </a>
+      </form>
+      <a href="index.html">
+          <button type="submit" class="btn btn-outline-primary">Back</button>
+  
+        </a>
+  </div>
+
+
+
+
+  <script src="src/script.js"> </script>
+
+
+</body>
+
+</html>
